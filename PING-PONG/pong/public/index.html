@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pong Game JavaScript</title>
+    <style>
+        body{
+            background-color: dimgray;
+        }
+        #pong{
+            border: 2px solid #FFF;
+            position: absolute;
+            margin :auto;
+            top:0;
+            right:0;
+            left:0;
+            bottom:0;
+        }
+    </style>
+</head>
+<body>
+   <canvas id="pong" width="600" height="400"></canvas>
+
+
+<!--Iniciamos el servicio de firebase-->
+ <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+
+   <script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBLezcScquDqCMDBhSiKIueKo00rqBB1mE",
+    authDomain: "pipong-5fdae.firebaseapp.com",
+    databaseURL: "https://pipong-5fdae.firebaseio.com",
+    projectId: "pipong-5fdae",
+    storageBucket: "pipong-5fdae.appspot.com",
+    messagingSenderId: "45037611937",
+    appId: "1:45037611937:web:631f0ab3c90df32ce1b9e0",
+    measurementId: "G-ZSGVP2PE0W"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="pong.js"></script>
+</body>
+</html>
