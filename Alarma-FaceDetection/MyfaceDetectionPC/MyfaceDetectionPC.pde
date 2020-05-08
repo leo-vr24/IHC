@@ -64,5 +64,9 @@ if (theOscMessage.checkTypetag("i"))
 {
 value1 = theOscMessage.get(0).intValue();
 fire.setValue("Detector de Caras", str(value1));
+fire.setValue("Detector de Caras",str(x));
+fire.setValue("Detector de Caras", str(y));
+fire.setValue("Detector de Caras", str(z));
+fire.setValue("Detector de Caras", str(p));
 }
 }
