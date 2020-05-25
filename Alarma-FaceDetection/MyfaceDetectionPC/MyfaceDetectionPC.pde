@@ -63,10 +63,10 @@ void oscEvent(OscMessage theOscMessage){
 if (theOscMessage.checkTypetag("i"))
 {
 value1 = theOscMessage.get(0).intValue();
-fire.setValue("Detector de Caras", str(value1));
-fire.setValue("Detector de Caras",str(x));
-fire.setValue("Detector de Caras", str(y));
-fire.setValue("Detector de Caras", str(z));
-fire.setValue("Detector de Caras", str(p));
+fire.setValue("DetCaras", str(value1)); 
+fire.setValue("CincoP",str(x));
+fire.setValue("DiezP", str(y));
+fire.setValue("QuinceP", str(z));
+fire.setValue("Seguridad", str(p));
 }
 }
